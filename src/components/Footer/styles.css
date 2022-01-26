@@ -1,0 +1,39 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+
+.rodape {
+	background-color: #616161;
+	color: #bababa;
+	padding: 20px 0;
+	text-align: center;
+	width: 100%;
+}
+
+.rodape .container {
+	display: flex;
+	flex-direction: column;
+}
+.rodape-lista {
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+
+
+.rodape-lista-item .ico {
+	font-size: 2.5em;
+	color: #bababa;
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+}
+
+.icone-twitter .ico:hover {
+	color: #55acee;
+}
+
+.icone-facebook .ico:hover {
+	color: #3b5998;
+}
+
+.icone-instagram .ico:hover {
+	color: #e95950;
+}

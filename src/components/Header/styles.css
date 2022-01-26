@@ -1,0 +1,37 @@
+header#main-header {
+  background-attachment: fixed;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/chat-8c59e.appspot.com/o/capa-madmax2.jpg?alt=media&token=48296e88-7d2b-43ed-9ca0-b74cf7b0662c");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+}
+
+header#main-header:after {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 212, 255, 0) 75%
+  );
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+header#main-header p {
+  margin-top: 10%;
+  color: #fff;
+  font-size: 5.3em;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}

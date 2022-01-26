@@ -1,0 +1,232 @@
+.corpo .corpo1{
+	display:flex;
+	flex-direction:rows;
+}
+.corpo .corpo1 .corpo2{
+	flex:1;
+}
+
+
+.corpo .seach{
+background-attachment: fixed;
+background-image: url(capa.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+flex-direction: column;
+ height: 9vh;
+ justify-content: space-between;
+position: relative;
+width: 100%;
+}
+
+ .centralizado{
+   display:flex; 
+   top:0px;
+   bottom:0px;
+   right: 0px;
+   left: 0px;
+   z-index:1;
+   position:fixed;
+   background-image: linear-gradient(135deg,#8e24aa,#42a5f5);
+   align-items: center;
+   justify-content:center;
+   text-align: center;
+ }
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+.corpo .product-list{
+display: grid;
+grid-template-columns: 100%;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+.corpo .product-list{
+display: grid;
+grid-template-columns: 100%;
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+.corpo .product-list{
+display: grid;
+grid-template-columns: 50% 50%;
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+.corpo .product-list{
+display: grid;
+grid-template-columns: 33% 33% 33%;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+.corpo .product-list{
+display: grid;
+grid-template-columns: 33% 33% 33%;
+}
+	
+	
+}
+
+.corpo .product-list article{
+background: #fff;
+display: flex;
+height: auto;
+flex-direction: column;
+border: 1px solid #ddd;
+border-radius: 5px;
+padding: 20px;
+margin-bottom: 20px;
+}
+
+.corpo .product-list article .picture {
+display: flex;
+flex-direction: column ;
+}
+
+.corpo .product-list article  strong{
+font-size: 33px;
+}
+
+.corpo .product-list article .picture .des{
+  height: 2vw;
+  border-radius: 5px;
+  border: 2px solid #da552f;
+  background: none;
+  margin-top: 30px;
+  color: #fff;
+  font-size: 1vw;
+  margin-top: 0.5vw;
+  text-align: center;
+  background: #da552f;
+}
+
+.corpo .product-list article .picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.corpo .product-list article p{
+font-size: 40px;
+color: #999;
+margin-top: 5px;
+height: 50px;
+line-height: 24px;
+}
+
+.corpo .product-list article a {
+height: 42px;
+border-radius: 5px;
+border: 2px solid #da552f;
+background: none;
+margin-top: 10px;
+color: #da552f;
+font-weight: bold;
+font-size: 16px;
+text-decoration: none;
+display:flex;
+justify-content: center;
+align-items: center;
+transition: all 0.5s;
+}
+
+.corpo .product-list article a:hover{
+background: #da552f;
+color: #fff;
+}
+
+
+.corpo .act button{
+position: relative;
+padding: 10px;
+border-radius: 5px;
+border:0;
+background: #da552f;
+color:#fff;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.corpo .act button:hover{
+opacity: 0.7;
+}
+
+.corpo .act button[disabled]{
+opacity: 0.5;
+cursor: default;
+  }
+
+.corpo .act button[disabled]:hover{
+opacity: 0.5;
+cursor: default;
+ }
+
+.fa-shopping-cart{
+color: #e95950;
+padding:20px;
+ }
+ 
+ l{
+	 width:20px;
+ }
+
+ .fa-shopping-cart:hover{
+  color: #da552f
+   }
+   
+   
+   .rotating {
+	   width:200px;
+	   height:200px;
+   }
+   
+   
+   @-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+}
